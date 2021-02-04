@@ -2,40 +2,45 @@
     <link rel="stylesheet" href="css/about.css"> 
 
     <div class="about">
-        <h1>About Them</h1>
-        <p>People Who Have The Imagination of The World of Tomorrow</p>
+        <h1><u>Zavmeister GPU Review Site</u></h1>
+        <h3>We will redirect you to a reliable source, consider us all rounder. 
+            The objective of this review site is to provide costomer with a quick access to the reliable review sources.
+            we will be reviewing the most recent GPU by nvidia. My imagenary team members and I are determined to provide you
+            with the best product. Please enjoy...        
+        </h3>
 
     </div>
     <div class="row">
          <div class="column">
              <div class="card">
-                <img src="images/elon-musk-1.webp">
+                <img src="images/rtx-2080-ti.jpg">
                 <div class="container1">
-                    <h2>CEO</h2>
-                    <p>Elon Musk</p>
-                    <p>Email: <a href= "elon.musk@tesla.com">elon.musk@tesla.com</a></p>
+                    <h2>GEFORCE RTX 2080 ti</h2>
+                    <p>NVIDIA GPU</p>
+                    <p>URL: <a href= "https://www.techradar.com/uk/reviews/nvidia-geforce-rtx-2080-ti-review">Review</a></p>
 
                 </div> 
              </div>
          </div>
          <div class="column">
             <div class="card">
-               <img src="images/max-tegmark-1.jpg">
+               <img src="images/rtx-3060-ti.jpg">
                <div class="container2">
-                   <h2>Professor</h2>
-                   <p>Max Tegmark</p>
-                   <p>Email: <a href= "max.tegmark@mit.edu">max.tegmark@mit.edu</a></p>
+                    <h2>GEFORCE RTX 3060 ti</h2>
+                    <p>NVIDIA GPU</p>
+                    <p>URL: <a href= "https://www.techradar.com/reviews/nvidia-geforce-rtx-3060-ti">Review</a></p>
+
 
                </div> 
             </div>
         </div>
         <div class="column">
             <div class="card">
-               <img src="images/sam-altman-1.webp">
+               <img src="images/rtx-3070.jpg">
                <div class="container3">
-                   <h2>CEO</h2>
-                   <p>Sam Altman</p>
-                   <p>Email: <a href= "sam.altman@openai.com">sam.altman@openai.com</a></p>
+                    <h2>GEFORCE RTX 3070</h2>
+                    <p>NVIDIA GPU</p>
+                    <p>URL: <a href= "https://www.techradar.com/reviews/nvidia-geforce-rtx-3070">Review</a></p>
 
                </div> 
             </div>
@@ -43,11 +48,34 @@
         <div class="column">
 
             <div class="card">
-               <img src="images/tomaso-poggio-1.png">
+               <img src="images/rtx-3080-ti.webp">
                <div class="container4">
-                   <h2>Professor</h2>
-                   <p>Tomaso Poggio</p>
-                   <p>Email: <a href= "tomaso.poggio@mit.edu">tomaso.poggio@mit.edu</a></p>
+                    <h2>GEFORCE RTX 3080 ti</h2>
+                    <p>NVIDIA GPU</p>
+                    <p>URL: <a href= "https://proclockers.com/review/nvidia-rtx-3080-ti-review/">Review</a></p>
+               </div> 
+            </div>
+        </div>
+        <div class="column">
+
+            <div class="card">
+               <img src="images/rtx-3090.png">
+               <div class="container5">
+                    <h2>GEFORCE RTX 3090</h2>
+                    <p>NVIDIA GPU</p>
+                    <p>URL: <a href= "https://www.techradar.com/reviews/nvidia-geforce-rtx-3090">Review</a></p>
+
+               </div> 
+            </div>
+        </div>
+        <div class="column">
+
+            <div class="card">
+               <img src="images/rtx-titan.webp">
+               <div class="container6">
+                    <h2>GEFORCE RTX Titan</h2>
+                    <p>NVIDIA GPU</p>
+                    <p>URL: <a href= "https://www.tomshardware.com/reviews/nvidia-titan-rtx-deep-learning-gaming-tensor,5971.html">Review</a></p>
 
                </div> 
             </div>
