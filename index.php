@@ -3,11 +3,11 @@
 
     <div class="about">
         <h1><u>Zavmeister GPU Review Site</u></h1>
-        <h3>We will redirect you to a reliable source, consider us all rounder. 
+        <p><h3>We will redirect you to a reliable source, consider us all rounder. 
             The objective of this review site is to provide costomer with a quick access to the reliable review sources.
             we will be reviewing the most recent GPUs by nvidia. My imagenary team members and I are determined to provide you
-            with the best product. Please enjoy...        
-        </h3>
+            with the best product. I am Zavmeister, my mates and I invite you to please enjoy...        
+        </h3></p>
 
     </div>
     <div class="row">
