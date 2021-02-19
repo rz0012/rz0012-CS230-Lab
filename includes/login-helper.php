@@ -17,17 +17,37 @@ function SQLInjectionCheck(){
     exit();    
 }
 
+function emptyCheck($var){
+    if (empty($var)){
+        echo '<script>
+                alert("The field is empty or it does not match with our database.");
+                window.history.go(-1);
+                </script>';
+        exit();
+    }
+    else return $var;
+}
+
+function session_activition($data){
+    session_start();
+    $_SESSION['uid'] = $data['uid'];
+    $_SESSION['email'] = $data['email'];
+    $_SESSION['fname'] = $data['fname'];
+    $_SESSION['lname'] = $data['lname'];
+
+    $uname = $data['fname'];
+    $email = $data['email'];
+    echo "<h1>Success</h1><p>$uname</p><p>$email</p>";
+
+    logoutTologin();
+}
+
 if(isset($_POST['Login-submit'])){
     require 'dbhandler.php';
 
-    $uname = $_POST['uname'];
-    $email = $_POST['email'];
-    $passw = $_POST['pwd'];
-
-    if (empty($uname) || empty($email) || empty($passw)){
-        header("Location: ../login.php?error=EmptyField");
-        exit();
-    }
+    $uname = emptyCheck($_POST['uname']);
+    $email = emptyCheck($_POST['email']);
+    $passw = emptyCheck($_POST['pwd']);
 
     $sql = "SELECT * FROM users WHERE uname=? AND email=?";
     $stmt = mysqli_stmt_init($conn);
@@ -39,33 +59,19 @@ if(isset($_POST['Login-submit'])){
         mysqli_stmt_bind_param($stmt,"ss",$uname,$email);
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
-        $data = mysqli_fetch_assoc($result);
+        $data = emptyCheck(mysqli_fetch_assoc($result));
 
-        if (empty($data)){
-            header("Location: ../login.php?error:User_OR_email_DNE");
-            exit();
+        $pass_check = password_verify($passw, $data['password']);
+        if($pass_check == true){
+            session_activition($data);             
         }
         else{
-            $pass_check = password_verify($passw, $data['password']);
-            if($pass_check == true){
-                session_start();
-                $_SESSION['uid'] = $data['uid'];
-                $_SESSION['email'] = $data['email'];
-                $_SESSION['fname'] = $data['fname'];
-                $_SESSION['lname'] = $data['lname'];
-
-                echo "<h1>Success</h1><p>$uname</p><p>$email</p>";
-                logoutTologin();
-                
-            }
-            else{
-                header("Location: ../login.php?error=WrongPass");
-                exit();
-            }
+            header("Location: ../login.php?error=WrongPass");
+            exit();
         }
+        
     }
 }
-
 else{
     header("Location: ../login.php");
     exit();
