@@ -1,0 +1,39 @@
+.bg-cover {
+    background-image: url("../images/background_image.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.center-me {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login-form {
+    border-radius: 100px;
+    background-color: #d5d5d5;
+    padding: 20px;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+img {
+    
+    height: 350px;
+    width: 350px;
+    padding: 8px;
+    margin: auto;
+    border-radius: 200px;
+    box-shadow: 0px 4px 8px #5276eef5;
+}
+
+.container { 
+    background-position: center;
+}
