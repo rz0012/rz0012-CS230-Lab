@@ -55,7 +55,11 @@ require 'includes/header.php';
                     <p class="hint-text"> Enter into your account! </p>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" name="uname-email" placeholder="User Name / Email"
+                        <input type="text" class="form-control" name="uname" placeholder="User Name"
+                            required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="email" placeholder="Email"
                             required autofocus>
                     </div>
                     <div class="form-group">
@@ -67,8 +71,6 @@ require 'includes/header.php';
                             in
                         </button>
                     </div>
-
-                    <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
 
                 </form>
 
