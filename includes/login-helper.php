@@ -10,6 +10,7 @@ function logoutTologin(){
             </ul>
         </div>
         ';
+    session_destroy();
 }
 function SQLInjectionCheck(){   
     header("Location: ../login.php?error=SQLInjection");
@@ -55,6 +56,7 @@ if(isset($_POST['Login-submit'])){
 
                 echo "<h1>Success</h1><p>$uname</p><p>$email</p>";
                 logoutTologin();
+                
             }
             else{
                 header("Location: ../login.php?error=WrongPass");
