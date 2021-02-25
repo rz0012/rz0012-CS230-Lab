@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+/*
 function logoutTologin(){
     echo '
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -11,7 +12,8 @@ function logoutTologin(){
         </div>
         ';
     session_destroy();
-}
+}*/
+
 function SQLInjectionCheck(){   
     header("Location: ../login.php?error=SQLInjection");
     exit();    
@@ -29,17 +31,21 @@ function emptyCheck($var){
 }
 
 function session_activition($data){
-    session_start();
+    
+    
     $_SESSION['uid'] = $data['uid'];
     $_SESSION['email'] = $data['email'];
     $_SESSION['fname'] = $data['fname'];
     $_SESSION['lname'] = $data['lname'];
+    $_SESSION['uname'] = $data['uname'];
 
-    $uname = $data['fname'];
+    $uname = $data['uname'];
     $email = $data['email'];
-    echo "<h1>Success</h1><p>$uname</p><p>$email</p>";
+    header("Location: ../profile.php?success=login");  
+    exit(); 
+    //echo "<h1>Success</h1><p>$uname</p><p>$email</p>";
 
-    logoutTologin();
+    //logoutTologin();
 }
 
 if(isset($_POST['Login-submit'])){
@@ -63,7 +69,7 @@ if(isset($_POST['Login-submit'])){
 
         $pass_check = password_verify($passw, $data['password']);
         if($pass_check == true){
-            session_activition($data);             
+            session_activition($data);              
         }
         else{
             header("Location: ../login.php?error=WrongPass");
