@@ -1,7 +1,7 @@
 <?php 
 require 'includes/header.php';
 require 'includes/dbhandler.php';
-session_start();
+
 ?>
 
 <main>
@@ -38,7 +38,7 @@ session_start();
 
             <div class="my-auto">
 
-                <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
+                <form action="includes/upload_helper.php" method="POST" enctype="multipart/form-data">
 
                     <div class="form-group">
                         <img src="<?php echo $photo;?> " alt="profile pic" onclick="triggered();" id="prof-display">

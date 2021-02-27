@@ -39,28 +39,28 @@
                     <a class="nav-link" href="includes/logout.php">Logout</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="../gallery.php">Gallery</a>
+                        <a class="nav-link" href="./gallery.php">Gallery</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="../profile.php">Profile</a>
+                        <a class="nav-link" href="./profile.php">Profile</a>
                     </li>';
                             
                     }
                     else{
                         echo '
                         <li class="nav-item active">
-                        <a class="nav-link" href="../login.php">Login<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./login.php">Login<span class="sr-only">(current)</span></a>
                         </li>';
                     }
                 ?>
 
                     
                     <li class="nav-item active">
-                        <a class="nav-link" href="../signup.php">Signup</a>
+                        <a class="nav-link" href="./signup.php">Signup</a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="../index.php">Home</a>
+                        <a class="nav-link" href="./index.php">Home</a>
                     </li>
                 </ul>
             </div>
