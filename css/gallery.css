@@ -17,3 +17,47 @@ img {
     border-radius: 200px;
     box-shadow: 0px 4px 8px #5276eef5;
 }
+
+
+h1{
+    text-align: center;
+    color: honeydew;
+}
+
+h3{
+    color: goldenrod;
+}
+
+p{
+    color: blanchedalmond;
+}
+
+.gallery-container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+}
+
+.card{
+    border-radius: 50px;
+    margin: 10px;
+    width: 20%;
+    max-width: 380px;
+    height: auto;
+    padding:5px
+}
+.gallery-container a{
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+
+}
+
+.gallery-container a:hover{
+    opacity: 70%;
+    text-decoration-color: goldenrod;
+}

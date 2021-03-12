@@ -59,7 +59,7 @@ if(isset($_POST['prof-submit'])){
     $fileErrorCheck = $serve->fileErrorCheck($file['error']);
 
     if ($fileSizeCheck == true && $fileTypeCheck == true && $fileErrorCheck == true){
-        
+        $ext = strtolower(pathinfo($file['name'],PATHINFO_EXTENSION));
         $new_name = uniqid('',true).".".$ext;
         $destination = '../profiles/'.$new_name;
         $sql = "UPDATE profiles SET profpic='$destination' WHERE uname='$uname'";

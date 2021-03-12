@@ -1,0 +1,11 @@
+a{
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+
+}
+a:hover{
+    opacity: 90%;
+    text-decoration-color: goldenrod;
+}

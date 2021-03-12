@@ -24,6 +24,7 @@
 
 </head>
 <header>
+    <link rel="stylesheet" href='./css/header.css'>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
             <a class="navbar-brand" href="index">Fanatic</a>
@@ -39,10 +40,14 @@
                     <a class="nav-link" href="includes/logout.php">Logout</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="./gallery.php">Gallery</a>
+                        <a class="nav-link" href="./profile.php">Profile</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="./profile.php">Profile</a>
+                        <a class="nav-link" href="./admin.php">Admin</a>
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./gallery.php">Gallery</a>
                     </li>';
                             
                     }
