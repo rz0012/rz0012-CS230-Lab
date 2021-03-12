@@ -9,10 +9,12 @@ class gallery_helper{
 
     public function fileSizeCheck($file_size){
         
-        define('KB',1024);
-        define('MB',1048576);
+        $KB = 1024;
+        $MB = 1048576;
+        //fidene('KB',1024);
+        //define('MB',1048576);
 
-        if($file_size > 10*MB){
+        if($file_size > 10*$MB){
             return false;
         }
         else return true;
