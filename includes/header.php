@@ -48,6 +48,9 @@
                     
                     <li class="nav-item active">
                         <a class="nav-link" href="./gallery.php">Gallery</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./profile_gallery.php">Profile Gallery</a>
                     </li>';
                             
                     }
