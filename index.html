@@ -1,5 +1,18 @@
-<div class="container" style="text-align: center;">
-  <h1>'.$avg.'</h1>
-  <div class="container" style="margin-bottom: 10px;">'.stars($avg).'</div>
-  <p>Number of Ratings: '.round($row2['Total',1]).'</p>
-</div>
+<script type="text/javascript">
+
+  xhr_getter("includes/get-ratings.php?id="$row["pid"], "testAvg");
+
+  function xhr_getter(url, element) {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+          // If the GET request was successful, fill in the span element with the review_list id with reviews
+          if (this.readyState == 4 && this.status == 200) {
+              document.getElementById(element).innerHTML = this.responseText;
+          }
+      };
+      
+      xhttp.open("GET", url, true);
+      xhttp.send();
+  }
+
+</script>

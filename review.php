@@ -5,6 +5,7 @@ require 'includes/review-helper.php';
 ?>
 
 <main>
+    <link rel="stylesheet" href="css/review.css">
     <span id="testAvg"></span>
     <div class="container" align="center" style="max-width: 800px;">
         <div class="my-auto">

@@ -61,4 +61,7 @@ p{
 .gallery-container a:hover{
     opacity: 70%;
     text-decoration-color: goldenrod;
+    position: absolute;
+    bottom: -22px;
 }
+
