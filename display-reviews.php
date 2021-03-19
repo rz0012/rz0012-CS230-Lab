@@ -34,6 +34,8 @@ $item = $_GET['id'];
 $sql = "SELECT * FROM reviews WHERE itemid='$item'";
 $result = mysqli_query($conn, $sql);
 
+
+
 if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_assoc($result)){
         $uname = $row['uname'];
@@ -43,7 +45,7 @@ if(mysqli_num_rows($result) > 0){
         
         echo '<div class="card mx-auto" style="width: 30%; padding: 5px; margin-bottom: 10px;">
                 <div class="media">
-                    <img class="mr-3" src="'.$picpath['profpic'].'" style="max-width: 75px; max-height: 75px; border-radius: 50%;">
+                    <img class="mr-3" src="'.$picpath['profpic'].'" style="max-width: 150px; max-height: 150px; border-radius: 100%;">
                     <div class="media-body">
                         <h4 class="mt-0">'.$row['uname'].'</h4>
                         <h5 style="color: red;">Rating: '.$row['ratingnum'].' </h5>
@@ -55,6 +57,8 @@ if(mysqli_num_rows($result) > 0){
     }
 }
 else{
-    echo '<h5 style="text-align: center;">No reviews, yet! Be the first!!</h5>';
+    echo '
+    <link rel="stylesheet" href="css/review.css">
+    <h5 class="item_font" style="text-align: center;">No reviews, yet! Be the first!!</h5>';
 }
 

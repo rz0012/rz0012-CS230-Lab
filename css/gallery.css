@@ -44,7 +44,7 @@ p{
 
 .card{
     border-radius: 50px;
-    margin: 10px;
+    margin: 25px;
     width: 20%;
     max-width: 380px;
     height: auto;
@@ -59,9 +59,7 @@ p{
 }
 
 .gallery-container a:hover{
-    opacity: 70%;
+    opacity: 100%;
     text-decoration-color: goldenrod;
-    position: absolute;
-    bottom: -22px;
 }
 

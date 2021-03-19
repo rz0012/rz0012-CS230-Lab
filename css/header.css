@@ -6,6 +6,8 @@ a{
 
 }
 a:hover{
-    opacity: 90%;
+    opacity: 100%;
     text-decoration-color: goldenrod;
+    transform: scale(1.2);
+    
 }

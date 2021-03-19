@@ -14,8 +14,18 @@ $row2 = mysqli_fetch_array($query2);
 
 $avg = round($row['AVGRATE'],1);
 
-echo'<div class="container" style="text-align: center;">
+
+#item being reviewed
+$sql_item ="SELECT * FROM gallery WHERE pid='$id'";
+$query_item = mysqli_query($conn,$sql_item);
+$array_item = mysqli_fetch_array($query_item);
+
+echo'<link rel="stylesheet" href="./css/review.css">
+    <div class="container" style="text-align: center;">
         <h1>'.$avg.'</h1>
+        <img src="./gallery/'.$array_item["picpath"].'">
+        <h3 class="item_font">'.$array_item["title"].'</h3>
+        <p class="item_font">'.$array_item["descript"].'</p>
         <div class="container" style="margin-bottom: 10px;">'.stars($avg).'</div>
         <p>Number of Ratings: '.round($row2['Total'],1).'</p>
     </div>';
