@@ -1,27 +1,9 @@
 <?php
 
-
-function rating_star($rate_num){
-    if ($rate_num == 1){
-        echo '<i class="fa fa-star fa-2x star-rev" data-index="1"></i>';
-    }
-    else if ($rate_num == 2){
-        echo '<i class="fa fa-star fa-2x star-rev" data-index="2"></i>';
-    }
-    else if ($rate_num == 3){
-        echo '<i class="fa fa-star fa-2x star-rev" data-index="3"></i>';
-    }
-    else if ($rate_num == 4){
-        echo '<i class="fa fa-star fa-2x star-rev" data-index="4"></i>';
-    }
-    else if ($rate_num == 5){
-        echo '<i class="fa fa-star fa-2x star-rev" data-index="5"></i>';
-    }
-    
-}
 $servename = "localhost";
 $DBuname = "phpmyadmin";
-$DBPass = "Hexacore1234";
+#password for aws
+$DBPass = "cs230lab";  #$DBPass = "Hexacore1234";
 $DBname = "cs230";
 
 $conn = mysqli_connect($servename, $DBuname, $DBPass, $DBname);

@@ -2,7 +2,8 @@
 
 $servename = "localhost";
 $DBuname = "phpmyadmin";
-$DBPass = "Hexacore1234";
+#password for aws
+$DBPass = "cs230lab";  #$DBPass = "Hexacore1234";
 $DBname = "cs230";
 
 $conn = mysqli_connect($servename, $DBuname, $DBPass, $DBname);
